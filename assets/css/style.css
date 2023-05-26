@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@250;400;500;600;700&display=swap");
+
+:root {
+  --info: #55acee;
+  --danger: #e74c3c;
+  --warning: #f39c12;
+  --dark: #1b1b1b;
+  --light: #f2f6ff;
+}
+
+* {
+  font-family: "Rubik", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+*::selection {
+  /* background-color: var(--main-color);
+   color:var(--white); */
+  display: none;
+}
+
+::-webkit-scrollbar {
+  /* height: .1rem;
+   width: .5rem; */
+  display: none;
+}
+
+::-webkit-scrollbar-track {
+  background-color: none;
+}
+
+::-webkit-scrollbar-thumb {
+  /* background-color: var(--main-color); */
+}
+
+body {
+  background-color: var(--light);
+  height: 1000px;
+}
+
+.border-dark {
+  border-color: var(--dark) !important;
+}
+
+.text-dark {
+  color: var(--dark) !important;
+}
+.text-info {
+  color: var(--info) !important;
+}
+.text-warning {
+  color: var(--warning) !important;
+}
+
+.text-danger {
+  color: var(--danger) !important;
+}
+
+.bg-light {
+  background-color: var(--light) !important;
+  color: var(--dark) !important;
+}
+
+/* navbar */
+.navbar {
+  transition: all 250ms ease-in-out;
+}
+.navbar-brand {
+  transition: all 250ms ease-in-out;
+}
+.navbar-brand:hover {
+  transform: scale(1.1);
+  letter-spacing: 0.1rem;
+}
+
+.nav-link {
+  color: var(--dark) !important;
+  font-weight: 500;
+  transition: all 250ms ease-in-out;
+}
+.nav-link:hover {
+  color: var(--info) !important;
+  opacity: 0.9;
+}
+.nav-link:active {
+  opacity: 1;
+}
+
+/* banner */
+
+.banner {
+  margin-top: 6rem;
+}
+.carousel-item img {
+  height: 250px;
+}
+
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-item img {
+    height: 180px;
+  }
+}
+
+.carousel-indicators button {
+  background-color: var(--dark) !important;
+}
