@@ -78,9 +78,21 @@ body {
   letter-spacing: 0.1rem;
 }
 
+.navbar-toggler,
+.navbar-toggler:active,
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+.navbar-toggler #menu-icon {
+  font-size: 2rem;
+  color: var(--dark) !important;
+}
+
 .nav-link {
   color: var(--dark) !important;
-  font-weight: 500;
+  font-weight: 400;
   transition: all 250ms ease-in-out;
 }
 .nav-link:hover {
@@ -94,7 +106,7 @@ body {
 /* banner */
 
 .banner {
-  margin-top: 6rem;
+  margin-top: 7rem;
 }
 .carousel-item img {
   height: 250px;
@@ -107,11 +119,48 @@ body {
 }
 
 @media (max-width: 576px) {
+  .banner {
+    margin-top: 5rem;
+  }
   .carousel-item img {
-    height: 180px;
+    height: 150px;
   }
 }
 
 .carousel-indicators button {
   background-color: var(--dark) !important;
+}
+
+/* kategori */
+.nav-pills {
+  display: flex;
+}
+.nav-pills .nav-item {
+  flex: 1;
+}
+.nav-pills .nav-item .nav-link {
+  color: var(--dark) !important;
+  width: 100%;
+  font-weight: 500;
+  border-radius: 0;
+  transition: all 250ms ease-in-out;
+}
+.nav-pills .nav-item .nav-link.active {
+  background-color: var(--dark) !important;
+  border-radius: 0;
+  color: var(--light) !important;
+}
+
+.card {
+  height: 315px;
+}
+
+.btn.btn-light {
+  background-color: var(--light) !important;
+  transition: all 250ms ease-in-out;
+}
+
+.btn.btn-light:hover {
+  background-color: var(--dark) !important;
+  color: var(--light) !important;
 }
